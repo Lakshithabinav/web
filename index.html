@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("kPSn-KxJaRmR9AQbd");
+})();
+</script>
+  
+  
+</head>
+<body>
+    <div class="inner">
+      <div class="outer">
+        <button class = "stbt"onclick="startSerial()">Start</button>
+        <p >Current voltage: <span id="pac">Zero</span></p>
+        <p >Average voltage: <span id="avg">Zero</span></p>
+        <p >Max voltage: <span id="max">Zero</span></p>
+        <p>Min Voltage : <span id="min">Zero</span></p>
+        <button onclick="send_mail()" class="mail">send message via mail</button>
+        <script src="index.js"></script>
+      </div>
+    </div>
+</body>
+</html>
